@@ -9,6 +9,7 @@ function orderByYear(arr) {
             return a.title.localeCompare(b.title)
         }
         else {
+            //  if sort returns -1 a stays in the same place, if positive a and b swap, if 0 a stays in the same place
             return a.year - b.year
         }
     })
